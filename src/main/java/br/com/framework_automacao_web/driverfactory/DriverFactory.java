@@ -16,7 +16,7 @@ public class DriverFactory {
 
 		case CHROME:
 			if (driver == null) {
-				System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "../framework_page_factory_exemplo/drivers/chromedriver");
 				return driver = new ChromeDriver();
 			}
 			break;
@@ -29,7 +29,7 @@ public class DriverFactory {
 			break;
 
 		default:
-			System.out.printf("Digite as opções de browser: CHROME ou FIREFOX.");
+			System.out.printf("Digite as opcoes de browser: CHROME ou FIREFOX.");
 		}
 		return driver;
 	}

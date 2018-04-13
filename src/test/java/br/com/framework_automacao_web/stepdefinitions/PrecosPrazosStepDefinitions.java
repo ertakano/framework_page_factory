@@ -26,32 +26,32 @@ public class PrecosPrazosStepDefinitions{
 	public void queEstouNaTelaInicialDaTelaDePrecosePrazos() throws Throwable {
 		precosPrazos.irParaUrlPrecosEPrazos();
 		Assert.assertTrue(precosPrazos.isValidaTitulo());
-		ExtentCucumberFormatter.screenShot("tela de Precos e prazos");
+		ExtentCucumberFormatter.screenShotBrowser("tela de Precos e prazos");
 		ExtentCucumberFormatter.insertInfoTextInStepReport("Acessa a tela de precos e prazos");
 	}
 	
 	@Dado("^que eu insira o CEP de origem \"(.*?)\"$")
 	public void queEuInsiraOCEPDeOrigem(String cepOrigem) throws Throwable {
 		precosPrazos.preencherCepDeOrigem(cepOrigem);
-		ExtentCucumberFormatter.screenShot("CEP de origem");
+		ExtentCucumberFormatter.screenShotBrowser("CEP de origem");
 	}
 	
 	@Dado("^que eu insira o CEP de destino \"(.*?)\"$")
 	public void queEuInsiraOCEPDeDestino(String cepDestino) throws Throwable {
 		precosPrazos.preencherCepDeDestino(cepDestino);
-		ExtentCucumberFormatter.screenShot("CEP de destino");
+		ExtentCucumberFormatter.screenShotBrowser("CEP de destino");
 	}
 	
 	@Dado("^selecione o Tipo de Servico \"(.*?)\"$")
 	public void selecioneOTipoDeServico(String tipoServico) throws Throwable {
 		precosPrazos.selecionarTipoServico(tipoServico);
-		ExtentCucumberFormatter.screenShot("Tipo de Servico");
+		ExtentCucumberFormatter.screenShotBrowser("Tipo de Servico");
 	}
 
 	@Quando("^clicar em Enviar$")
 	public void clicarEmEnviar() throws Throwable {
 		precosPrazos.clicarBotaoEnviar();
-		ExtentCucumberFormatter.screenShot("Enviar");
+		ExtentCucumberFormatter.screenShotBrowser("Enviar");
 	}
 
 	@Entao("^devo visualizar os dados Prazo de entrega \"(.*?)\", entrega \"(.*?)\", Dias de Entrega \"(.*?)\"$")
@@ -60,14 +60,14 @@ public class PrecosPrazosStepDefinitions{
 		Assert.assertEquals(prazoEntrega, precosPrazos.pegarTextoprazoEntregaTxt());
 		Assert.assertEquals(entrega, precosPrazos.pegarTextoentregaTxt());
 		Assert.assertEquals(diasEntrega, precosPrazos.pegarTextodiasEntregaTxt());
-		ExtentCucumberFormatter.screenShot("dados Prazo de entrega");
+		ExtentCucumberFormatter.screenShotBrowser("dados Prazo de entrega");
 	}
 
 	@Entao("^clicar em dados do Objeto Simulado$")
 	public void clicarEmDadosDoObjetoSimulado() throws Throwable {
 		try {
 			precosPrazos.clicarBotaoDadosObjetoSimulado();
-			ExtentCucumberFormatter.screenShot("Objeto Simulado");
+			ExtentCucumberFormatter.screenShotBrowser("Objeto Simulado");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -80,7 +80,7 @@ public class PrecosPrazosStepDefinitions{
 		Assert.assertEquals(enderecoOrigem, precosPrazos.pegarendOrigemTxt());
 		Assert.assertEquals(bairroOrigem, precosPrazos.pegarbairroOrigemTxt());
 		Assert.assertEquals(cidadeUfOrigem, precosPrazos.pegarcidadeOrigemTxt());
-		ExtentCucumberFormatter.screenShot("endereco Simulado de Origem");
+		ExtentCucumberFormatter.screenShotBrowser("endereco Simulado de Origem");
 	}
 	
 	@Entao("^o endereco Simulado de Destino: CEP \"(.*?)\", endereco \"(.*?)\", Bairro \"(.*?)\", Cidade / UF \"(.*?)\"$")
@@ -89,7 +89,7 @@ public class PrecosPrazosStepDefinitions{
 		Assert.assertEquals(enderecoDestino, precosPrazos.pegarendDestinoTxt());
 		Assert.assertEquals(bairroDestino, precosPrazos.pegarbairroDestinoTxt());
 		Assert.assertEquals(cidadeUfDestino, precosPrazos.pegarcidadeDestinoTxt());
-		ExtentCucumberFormatter.screenShot("endereco Simulado de Destino");
+		ExtentCucumberFormatter.screenShotBrowser("endereco Simulado de Destino");
 	}
 	
 	@SuppressWarnings("static-access")
@@ -112,7 +112,7 @@ public class PrecosPrazosStepDefinitions{
 		Assert.assertEquals(endereco, precosPrazos.pegarendOrigemTxt());
 		Assert.assertEquals(Bairro, precosPrazos.pegarbairroOrigemTxt());
 		Assert.assertEquals(Cidade, precosPrazos.pegarcidadeOrigemTxt());
-		ExtentCucumberFormatter.screenShot("endereco Simulado de Origem");
+		ExtentCucumberFormatter.screenShotBrowser("endereco Simulado de Origem");
 	}
 	
 	@SuppressWarnings("static-access")
@@ -135,7 +135,7 @@ public class PrecosPrazosStepDefinitions{
 		Assert.assertEquals(enderecoDestino, precosPrazos.pegarendDestinoTxt());
 		Assert.assertEquals(bairroDestino, precosPrazos.pegarbairroDestinoTxt());
 		Assert.assertEquals(cidadeUfDestino, precosPrazos.pegarcidadeDestinoTxt());
-		ExtentCucumberFormatter.screenShot("endereco Simulado de Destino");
+		ExtentCucumberFormatter.screenShotBrowser("endereco Simulado de Destino");
 	}
 	
 	@After()
