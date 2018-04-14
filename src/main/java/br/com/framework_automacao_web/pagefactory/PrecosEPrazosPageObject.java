@@ -31,16 +31,16 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	@FindBy(xpath = "//tr[@class='destaque']/td/prazoentrega")
 	private WebElement prazoEntregaTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[3]/td")
+	@FindBy(xpath = "//td[text()='Entrega domiciliar']")
 	private WebElement entregaTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/table/tbody/tr[4]/td")
+	@FindBy(xpath = "//td[text()='Segunda a Sexta-Feira.']")
 	private WebElement diasEntregaTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[2]/td[1]")
+	@FindBy(xpath = "//th[text()='CEP']/../td")
 	private WebElement cepOrigemTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[3]/td[1]")
+	@FindBy(xpath = "//th[.='Endereço']/../td")
 	private WebElement endOrigemTxt;	
 	
 	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[4]/td[1]")
@@ -49,7 +49,7 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[5]/td[1]")
 	private WebElement cidadeOrigemTxt; 
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[2]/td[2]")
+	@FindBy(xpath = "//th[.='CEP']/../td[2]")
 	private WebElement cepDestinoTxt;
 	
 	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[3]/td[2]")
@@ -60,11 +60,7 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	
 	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[5]/td[2]")
 	private WebElement cidadeDestinoTxt;
-	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[1]/ul/li[6]/a/h2")
-	private WebElement namePagePrecosPrazos;		
 		
-	
 	public void irParaUrlPrecosEPrazos() {
 		navigateTo("http://www2.correios.com.br/sistemas/precosPrazos/");
 	}
@@ -156,8 +152,5 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	public void clicarBotaoDadosObjetoSimulado() {	
 		click(botaoDadosObjetoSimulado);
 	}
-	
-	public String namePagePrecosPrazos() {
-		return getText(namePagePrecosPrazos);
-	}
+
 }
