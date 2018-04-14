@@ -59,11 +59,11 @@ public class ExtentCucumberFormatter implements Reporter, Formatter {
 	static ExtentHtmlReporter htmlReporter;
 	private boolean scenarioOutlineFlag;
 
-	private static ThreadLocal<ExtentTest> featureTestThreadLocal = new InheritableThreadLocal<>();
-	private static ThreadLocal<ExtentTest> scenarioOutlineThreadLocal = new InheritableThreadLocal<>();
-	static ThreadLocal<ExtentTest> scenarioThreadLocal = new InheritableThreadLocal<>();
-	private static ThreadLocal<LinkedList<Step>> stepListThreadLocal = new InheritableThreadLocal<>();
-	static ThreadLocal<ExtentTest> stepTestThreadLocal = new InheritableThreadLocal<>();
+	private static ThreadLocal<ExtentTest> featureTestThreadLocal = new InheritableThreadLocal<ExtentTest>();
+	private static ThreadLocal<ExtentTest> scenarioOutlineThreadLocal = new InheritableThreadLocal<ExtentTest>();
+	static ThreadLocal<ExtentTest> scenarioThreadLocal = new InheritableThreadLocal<ExtentTest>();
+	private static ThreadLocal<LinkedList<Step>> stepListThreadLocal = new InheritableThreadLocal<LinkedList<Step>>();
+	static ThreadLocal<ExtentTest> stepTestThreadLocal = new InheritableThreadLocal<ExtentTest>();
 
 	static String DATE_TIME = getFormattedDateTime();
 	static String PATH_FILE = "output/report_" + getFormattedDateTime() + "/";

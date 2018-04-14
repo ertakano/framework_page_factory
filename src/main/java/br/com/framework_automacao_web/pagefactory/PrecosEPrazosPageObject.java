@@ -105,6 +105,7 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	}
 	
 	public String pegarcidadeOrigemTxt() throws Exception {
+		click(cidadeOrigemTxt);
 		containsElement(cidadeOrigemTxt);
 		return getText(cidadeOrigemTxt);
 	}
