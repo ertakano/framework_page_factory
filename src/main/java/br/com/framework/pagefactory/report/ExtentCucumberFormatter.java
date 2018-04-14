@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.report;
+package br.com.framework.pagefactory.report;
 
 import java.awt.AWTException;
 import java.awt.HeadlessException;
@@ -35,7 +35,7 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.ExtentXReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import br.com.framework_automacao_web.driverfactory.DriverFactory;
+import br.com.framework.pagefactory.driverfactory.DriverFactory;
 import gherkin.formatter.Formatter;
 import gherkin.formatter.Reporter;
 import gherkin.formatter.model.Background;
@@ -395,10 +395,13 @@ public class ExtentCucumberFormatter implements Reporter, Formatter {
 			BufferedImage bufferedImage = new Robot()
 					.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
 			ImageIO.write(bufferedImage, "png", new File(PATH_FILE + image + ".png"));
-		} catch (HeadlessException | AWTException | IOException e) {
-			e.printStackTrace();
+		} catch (HeadlessException h) {
+			h.printStackTrace();
+		} catch (AWTException a) {
+			a.printStackTrace();
+		} catch (IOException i) {
+			i.printStackTrace();
 		}
-
 	}
 
 	private static String getFormattedDateTime() {

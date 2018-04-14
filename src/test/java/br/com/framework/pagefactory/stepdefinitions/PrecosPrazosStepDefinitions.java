@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.stepdefinitions;
+package br.com.framework.pagefactory.stepdefinitions;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import br.com.framework_automacao_web.driverfactory.DriverFactory;
-import br.com.framework_automacao_web.pagefactory.PrecosEPrazosPageObject;
-import br.com.framework_automacao_web.report.ExtentCucumberFormatter;
-import br.com.framework_automacao_web.utils.WebDriverUtils;
+import br.com.framework.pagefactory.driverfactory.DriverFactory;
+import br.com.framework.pagefactory.pagefactory.PrecosEPrazosPageObject;
+import br.com.framework.pagefactory.report.ExtentCucumberFormatter;
+import br.com.framework.pagefactory.utils.WebDriverUtils;
 import cucumber.api.java.After;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;

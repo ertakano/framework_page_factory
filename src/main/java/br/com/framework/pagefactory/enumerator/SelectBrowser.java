@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.enumerator;
+package br.com.framework.pagefactory.enumerator;
 
 public enum SelectBrowser {
 

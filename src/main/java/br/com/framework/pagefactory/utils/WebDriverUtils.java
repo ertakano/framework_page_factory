@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.utils;
+package br.com.framework.pagefactory.utils;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import br.com.framework_automacao_web.driverfactory.DriverFactory;
+import br.com.framework.pagefactory.driverfactory.DriverFactory;
 
 public class WebDriverUtils{
 

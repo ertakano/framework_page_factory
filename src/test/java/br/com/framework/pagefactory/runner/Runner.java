@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.runner;
+package br.com.framework.pagefactory.runner;
 
 import java.io.IOException;
 
@@ -6,8 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
-import br.com.framework_automacao_web.driverfactory.DriverFactory;
-import br.com.framework_automacao_web.enumerator.SelectBrowser;
+import br.com.framework.pagefactory.driverfactory.DriverFactory;
+import br.com.framework.pagefactory.enumerator.SelectBrowser;
 import cucumber.api.CucumberOptions;
 import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
@@ -17,9 +17,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 features = "features/"
 ,snippets = SnippetType.CAMELCASE
-,glue = "br.com.framework_automacao_web.stepdefinitions"
+,glue = "br.com.framework.pagefactory.stepdefinitions"
 ,monochrome = true
-,plugin = "br.com.framework_automacao_web.report.ExtentCucumberFormatter:"
+,plugin = "br.com.framework.pagefactory.report.ExtentCucumberFormatter:"
 ,tags = {"@CN01,@CN02"}
 )
 

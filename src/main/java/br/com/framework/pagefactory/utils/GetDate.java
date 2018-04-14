@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.utils;
+package br.com.framework.pagefactory.utils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

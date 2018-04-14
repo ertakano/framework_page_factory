@@ -1,4 +1,4 @@
-package br.com.framework_automacao_web.report;
+package br.com.framework.pagefactory.report;
 
 import java.io.File;
 

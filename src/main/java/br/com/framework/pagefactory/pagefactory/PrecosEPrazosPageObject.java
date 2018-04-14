@@ -1,9 +1,9 @@
-package br.com.framework_automacao_web.pagefactory;
+package br.com.framework.pagefactory.pagefactory;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import br.com.framework_automacao_web.utils.WebDriverUtils;
+import br.com.framework.pagefactory.utils.WebDriverUtils;
 
 public class PrecosEPrazosPageObject extends WebDriverUtils{
 	

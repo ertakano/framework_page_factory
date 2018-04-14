@@ -1,10 +1,10 @@
-package br.com.framework_automacao_web.driverfactory;
+package br.com.framework.pagefactory.driverfactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import br.com.framework_automacao_web.enumerator.SelectBrowser;
+import br.com.framework.pagefactory.enumerator.SelectBrowser;
 
 public class DriverFactory {
 
