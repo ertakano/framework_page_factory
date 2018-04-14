@@ -7,7 +7,7 @@ import java.util.Date;
 public class GetDate {
 	
 	/**
-	 * Método para retornar a data atual no formato String 'dd/mm/yyyy'
+	 * Metodo para retornar a data atual no formato String 'dd/mm/yyyy'
 	 * @return
 	 */
 	public String preencherDataDePostagem() {

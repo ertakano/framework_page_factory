@@ -23,7 +23,7 @@ features = "features/"
 ,tags = {"@CN01,@CN02"}
 )
 
-public class CucumberRunner {
+public class Runner {
 
 	@BeforeClass
 	public static void start() throws IOException {

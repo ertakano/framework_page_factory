@@ -43,22 +43,22 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	@FindBy(xpath = "//th[.='Endereço']/../td")
 	private WebElement endOrigemTxt;	
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[4]/td[1]")
+	@FindBy(xpath = "//th[.='Bairro']/../td")
 	private WebElement bairroOrigemTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[5]/td[1]")
+	@FindBy(xpath = "//th[contains(text(),'Cidade')]/../td")
 	private WebElement cidadeOrigemTxt; 
 	
 	@FindBy(xpath = "//th[.='CEP']/../td[2]")
 	private WebElement cepDestinoTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[3]/td[2]")
+	@FindBy(xpath = "//th[contains(.,'Endereço')]/../td[2]")
 	private WebElement endDestinoTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[4]/td[2]")
+	@FindBy(xpath = "//th[.='Bairro']/../td[2]")
 	private WebElement bairroDestinoTxt;
 	
-	@FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/div/div/div[2]/div[2]/div[2]/div[6]/table/tbody/tr[5]/td[2]")
+	@FindBy(xpath = "//th[contains(.,'Cidade')]/../td[2]")
 	private WebElement cidadeDestinoTxt;
 		
 	public void irParaUrlPrecosEPrazos() {
