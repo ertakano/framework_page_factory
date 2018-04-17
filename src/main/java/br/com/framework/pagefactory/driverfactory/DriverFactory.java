@@ -16,14 +16,14 @@ public class DriverFactory {
 
 		case CHROME:
 			if (driver == null) {
-				System.setProperty("webdriver.chrome.driver", "../framework_page_factory_exemplo/drivers/chromedriver");
+				System.setProperty("webdriver.chrome.driver", ".//drivers/chromedriver.exe");
 				return driver = new ChromeDriver();
 			}
 			break;
 
 		case FIREFOX:
 			if (driver == null) {
-				System.setProperty("webdriver.gecko.driver", "/automacao/framework_automacao/drivers/geckodriver");
+				System.setProperty("webdriver.gecko.driver", "../drivers/geckodriver");
 				return driver = new FirefoxDriver();
 			}
 			break;

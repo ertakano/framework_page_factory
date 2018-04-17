@@ -40,7 +40,7 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	@FindBy(xpath = "//th[text()='CEP']/../td")
 	private WebElement cepOrigemTxt;
 	
-	@FindBy(xpath = "//th[.='EndereÃ§o']/../td")
+	@FindBy(xpath = "//th[.='Endereço']/../td")
 	private WebElement endOrigemTxt;	
 	
 	@FindBy(xpath = "//th[.='Bairro']/../td")
@@ -52,7 +52,7 @@ public class PrecosEPrazosPageObject extends WebDriverUtils{
 	@FindBy(xpath = "//th[.='CEP']/../td[2]")
 	private WebElement cepDestinoTxt;
 	
-	@FindBy(xpath = "//th[contains(.,'EndereÃ§o')]/../td[2]")
+	@FindBy(xpath = "//th[contains(.,'Endereço')]/../td[2]")
 	private WebElement endDestinoTxt;
 	
 	@FindBy(xpath = "//th[.='Bairro']/../td[2]")
